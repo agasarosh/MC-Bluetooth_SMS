@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.saroshaga.bluetoothmessenger.SMS_Activity">
+
+    <EditText
+        android:id="@+id/EditText_PhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Number"
+        android:inputType="phone" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/MainActivity_Message"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter message"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/Send_msg_Btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send_Message"
+        android:layout_below="@+id/MainActivity_Message"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="41dp" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="match_parent"
+        android:layout_marginTop="51dp"
+        android:layout_height="wrap_content"
+        android:text="Main activity"
+        android:layout_below="@+id/Send_msg_Btn"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
